@@ -4,6 +4,13 @@ This emoji pack concentrates commonly used, non-standard emoji from Github and e
 
 The emoji images are unlicensed, use at your own risk.
 
+## Emoji List
+
+- octocat (Github)
+- squirrel / shipit (Github)
+- trollface (whynne)
+- Various DOOM Marine emoji (rage, godmode, berserk, etc)
+
 ## Installation
 
 This pack requires `nodebb-plugin-emoji` version 2. For best results, install and activate both plugins through your Admin Control Panel in NodeBB.
