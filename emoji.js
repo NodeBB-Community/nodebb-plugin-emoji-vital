@@ -1,22 +1,23 @@
 const fs = require('fs');
 const path = require('path');
 
-module.exports = (callback) => {
+exports.defineEmoji = (data, callback) => {
   fs.readFile(path.join(__dirname, 'emoji/LICENSE'), (err, buffer) => {
     if (err) {
       return callback(err);
     }
 
     const license = buffer.toString();
-    
-    callback(null, {
+
+    data.packs.push({
       name: 'Vital Emoji',
       id: 'vital',
       attribution: '',
+      path: __dirname,
       license,
       mode: 'images',
       images: {
-        directory: path.join(__dirname, 'emoji'),
+        directory: 'emoji',
       },
       dictionary: {
         trollface: {
@@ -96,5 +97,7 @@ module.exports = (callback) => {
         },
       },
     });
+
+    callback(null, data);
   });
 };
