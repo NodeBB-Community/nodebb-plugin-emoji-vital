@@ -17,6 +17,13 @@
     "vital",
     "extended"
   ],
+  "nbbpm": {
+    "name": "Emoji One",
+    "compatibility": "^1.7.0"
+  },
+  "peerDependencies": {
+    "nodebb-plugin-emoji": "^2.0.0"
+  },
   "author": "Peter Jaszkowiak",
   "license": "MIT"
 }
